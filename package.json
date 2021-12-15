@@ -1,0 +1,22 @@
+{
+  "name": "create-ts-three-webpack",
+  "version": "1.0.0",
+  "description": "ThreeJS + Typescript + Webpack boilerplate",
+  "main": "index.js",
+  "bin": {
+    "create-ts-three-webpack": "./index.js"
+  },
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "keywords": [
+    "threejs",
+    "webpack",
+    "webgl",
+    "typescript",
+    "boilerplate",
+    "starter"
+  ],
+  "author": "tokyoxyu <gqmygvdexd@metalunits.com>",
+  "license": "ISC"
+}
