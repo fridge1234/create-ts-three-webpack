@@ -1,4 +1,4 @@
-#!/usr/bin/env/ node
+#!/usr/bin/env node
 
 const fs = require('fs');
 const path = require('path');
@@ -21,7 +21,10 @@ const copyFolderSync = (from, to) => {
 
 const handleInput = () => {
   const inputPath = process.argv[2];
-  if (!inputPath) return;
+  if (!inputPath) {
+    log('wrong input...');
+    return;
+  }
   const projectPath = path.join(CURR_DIR, inputPath);
   fs.mkdirSync(projectPath, { recursive: true });
   copyFolderSync(TEMPLATE_PATH, projectPath);

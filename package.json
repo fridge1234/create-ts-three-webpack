@@ -1,10 +1,10 @@
 {
-  "name": "create-ts-three-webpack",
-  "version": "1.0.0",
+  "name": "@tokyoxyu/create-ts-three-webpack",
+  "version": "1.0.1",
   "description": "ThreeJS + Typescript + Webpack boilerplate",
   "main": "index.js",
   "bin": {
-    "create-ts-three-webpack": "./index.js"
+    "create-ts-three-webpack": "index.js"
   },
   "scripts": {
     "start": "node ./index.js"
@@ -18,5 +18,13 @@
     "starter"
   ],
   "author": "tokyoxyu <gqmygvdexd@metalunits.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fridge1234/create-ts-three-webpack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fridge1234/create-ts-three-webpack/issues"
+  },
+  "homepage": "https://github.com/fridge1234/create-ts-three-webpack#readme"
 }
