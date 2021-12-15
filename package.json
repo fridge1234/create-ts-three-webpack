@@ -1,6 +1,6 @@
 {
   "name": "@tokyoxyu/create-ts-three-webpack",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ThreeJS + Typescript + Webpack boilerplate",
   "main": "index.js",
   "bin": {
