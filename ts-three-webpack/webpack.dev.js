@@ -38,7 +38,10 @@ module.exports = {
   devServer: {
     // https://webpack.js.org/configuration/dev-server/#devserverstatic
     hot: true,
-    port: 9000
+    port: 9000,
+    devMiddleware: {
+      writeToDisk: true
+    }
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -48,7 +51,8 @@ module.exports = {
   ],
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist/dev'),
-    clean: true
+    clean: {
+      dry: true
+    }
   }
 };
