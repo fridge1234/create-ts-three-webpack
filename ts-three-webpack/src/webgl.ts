@@ -11,7 +11,6 @@ export class WebglEngine {
   constructor() {
     this.renderer = new THREE.WebGLRenderer({ antialias: true });
     this.renderer.setSize(innerWidth, innerHeight);
-//     this.renderer.setPixelRatio(2);
     document.body.appendChild(this.renderer.domElement);
     this.camera = new THREE.PerspectiveCamera(75, 1, 0.1, 100000);
     this.scene = new THREE.Scene();
@@ -21,11 +20,11 @@ export class WebglEngine {
     window.addEventListener('resize', this.onWindowResize, false);
   }
 
-  public onWindowResize() {
+  public onWindowResize = () => {
     this.camera.aspect = window.innerWidth / window.innerHeight;
     this.camera.updateProjectionMatrix();
     this.renderer.setSize(window.innerWidth, window.innerHeight);
-  }
+  };
 
   private sceneSetup() {
     const light = new THREE.PointLight(new THREE.Color('blue'), 15, 100);

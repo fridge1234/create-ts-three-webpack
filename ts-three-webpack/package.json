@@ -1,46 +1,20 @@
 {
-  "_from": "ts-three-webpack",
-  "_id": "ts-three-webpack@1.0.4",
-  "_inBundle": false,
-  "_integrity": "sha512-hFY9nltJcxShTTcERVUiLV7bLGF9GVbVi4+J6rUbngGMo4cd7i9qnXjK9lh896domM1sRMlMbaMgo+37i06ANQ==",
-  "_location": "/ts-three-webpack",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "ts-three-webpack",
-    "name": "ts-three-webpack",
-    "escapedName": "ts-three-webpack",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/ts-three-webpack/-/ts-three-webpack-1.0.1.tgz",
-  "_shasum": "13c3db737a6b584c44a5e2db31ef0ecad8707277",
-  "_spec": "ts-three-webpack",
-  "_where": "C:\\Users\\kmarx\\Documents\\TEST1",
   "author": "",
-  "bundleDependencies": false,
+  "keywords": [],
+  "license": "ISC",
+  "main": "./src/index.js",
+  "name": "ts-three-webpack",
+  "scripts": {
+    "dev": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "version": "1.0.0",
   "dependencies": {
-    "gsap": "*",
-    "react": "*",
-    "react-dom": "*",
     "three": "^0.135.0"
   },
-  "deprecated": false,
-  "description": "",
   "devDependencies": {
-    "@babel/core": "*",
-    "@babel/preset-env": "^*",
-    "@babel/preset-react": "*",
+    "@yushijinhun/three-minifier-webpack": "^0.3.1",
     "@types/three": "^0.135.0",
-    "babel": "*",
-    "babel-core": "*",
-    "babel-loader": "*",
     "css-loader": "*",
     "glsl-shader-loader": "*",
     "html-loader": "*",
@@ -54,13 +28,5 @@
     "webpack": "*",
     "webpack-cli": "*",
     "webpack-dev-server": "*"
-  },
-  "keywords": [],
-  "license": "ISC",
-  "main": "./src/index.js",
-  "name": "ts-three-webpack",
-  "scripts": {
-    "dev": "webpack serve --config webpack.dev.js"
-  },
-  "version": "1.0.1"
+  }
 }

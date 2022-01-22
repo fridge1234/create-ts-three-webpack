@@ -1,4 +1,3 @@
-const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -27,32 +26,15 @@ module.exports = {
       }
     ]
   },
-  cache: {
-    type: 'filesystem'
-  },
-  optimization: {
-    runtimeChunk: 'multiple',
-    splitChunks: { chunks: 'all' }
-  },
   devtool: 'source-map',
   devServer: {
-    // https://webpack.js.org/configuration/dev-server/#devserverstatic
     hot: true,
-    port: 9000,
-    devMiddleware: {
-      writeToDisk: true
-    }
+    port: 9000
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: 'src/index.html',
       minify: true
     })
-  ],
-  output: {
-    filename: '[name].bundle.js',
-    clean: {
-      dry: true
-    }
-  }
+  ]
 };
